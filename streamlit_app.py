@@ -34,3 +34,4 @@ import requests
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 streamlit.text(fruityvice_response.json())
+import snowflake.connector
