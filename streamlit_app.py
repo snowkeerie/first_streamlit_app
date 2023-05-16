@@ -43,6 +43,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_rows)
 
+add_my_fruit = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 streamlit.write('thanks for adding ', add_my_fruit)
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
